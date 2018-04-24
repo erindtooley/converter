@@ -6,19 +6,19 @@ const form = document.querySelector("form");
  * @param {Number} userInput
  * @returns {Number} - return the converted measurement
  */
-function convert() {
-  /* TODO: Update the name of this function to something appropriate (e.g. feetToInches...) */
-}
 
-/** Capture the user's input value on submit and run it through the convert fxn.
- */
+
+const inches = Number("#user-input");
+const feet = Number(inches / 12);
+
+function LengthConverter(inches) {
+  document.getElementById("#user-output").innerHTML= 
+    document.getElementById("#user-input").value;
+}
 function submitHandler() {
-  /*
-    1. Grab the VALUE PROPERY of: document.querySelector("#user-input")...(finish this code)...
-    2. Pass that value into convert() fxn. to get back the converted value.
-    3. Give the user the output by updating the TEXTVALUE PROPERTY of: document.querySelector("#user-output")
-  */
-}
-
-// Add a listener to the form
+  document.querySelector("#user-input") === inches;
+  
+}  
 form.addEventListener("submit", submitHandler);
+document.querySelector("#user-output").innerHTML = feet;
+ 
